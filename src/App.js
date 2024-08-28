@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './demo.css';
 
-const URL = "https://api.exchangerate-api.com/v4/latest/USD"; // Replace with a real API endpoint
+const URL = "https://api.exchangerate-api.com/v4/latest/USD"; 
 
 function Demo() {
   const [amount, setAmount] = useState(100);
@@ -30,7 +30,7 @@ function Demo() {
     if (rates[fromCurrency] && rates[toCurrency]) {
       const rate = rates[toCurrency] / rates[fromCurrency];
       setConvertedAmount(amount * rate);
-      setShowResult(true); // Show result after conversion
+      setShowResult(true); 
     }
   };
 
