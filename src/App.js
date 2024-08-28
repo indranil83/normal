@@ -16,7 +16,7 @@ function Demo() {
       try {
         const res = await fetch(URL);
         const data = await res.json();
-        console.log(data); 
+        console.log(data);
         setRates(data.rates);
       } catch (error) {
         console.error("Error fetching exchange rates:", error);
